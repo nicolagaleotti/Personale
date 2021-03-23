@@ -10,29 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Inserimento_Personale
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Aziendalexaml.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Aziendalexaml : Window
     {
-        public MainWindow()
+        public Aziendalexaml()
         {
             InitializeComponent();
-        }
-
-        string[] tipologia = new string[] {"Aziendale", "SubFornitore", "Fornitore", "Consulente"};
-
-        private void cmbTipologia_Loaded(object sender, RoutedEventArgs e)
-        {
-            foreach(string s in tipologia)
-            {
-                cmbTipologia.Items.Add(s);
-            }
         }
     }
 }

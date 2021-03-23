@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="700">
     <Grid>
-        <StackPanel>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -58,7 +58,7 @@
                 </StackPanel>
 
                 <StackPanel Grid.Row="4" Grid.Column="1" VerticalAlignment="Center">
-                    <ComboBox Name="cmbTipologia" FontSize="18" Width="130" Height="34" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
+                    <ComboBox Name="cmbTipologia" FontSize="18" Width="130" Height="34" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left"  Loaded="cmbTipologia_Loaded"/>
                 </StackPanel>
 
                 <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">
