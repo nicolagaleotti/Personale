@@ -15,19 +15,19 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" MinHeight="50"/>
-                    <RowDefinition Height="*" MinHeight="30"/>
-                    <RowDefinition Height="*" MinHeight="240"/>
+                    <RowDefinition Height="*" MinHeight="20"/>
+                    <RowDefinition Height="*" MinHeight="250"/>
                     <RowDefinition Height="*" MinHeight="10"/>
                     <RowDefinition Height="*" MinHeight="40"/>
                     <RowDefinition Height="*" MinHeight="40"/>
                 </Grid.RowDefinitions>
 
                 <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
-                    <Label Content="Inserimento Personale Aziendale" Foreground="Red" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                    <Label Content="Personale Aziendale" Foreground="Red" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
                 </StackPanel>
 
                 <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
-                    <ListBox x:Name="lbMostra" FontSize="18" Height="235" Width="700" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                    <ListBox x:Name="lbMostra" FontSize="18" Height="245" Width="700" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
                 </StackPanel>
 
                 <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
