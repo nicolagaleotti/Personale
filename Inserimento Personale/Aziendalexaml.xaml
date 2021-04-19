@@ -35,7 +35,7 @@
                 </StackPanel>
 
                 <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">
-                    <ComboBox Name="cmbQualifica" FontSize="18" Width="170" Height="34" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
+                    <ComboBox Name="cmbQualifica" FontSize="18" Width="170" Height="34" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Loaded="cmbQualifica_Loaded"/>
                 </StackPanel>
 
                 <StackPanel Grid.Row="3" Grid.Column="0" VerticalAlignment="Center">
@@ -47,7 +47,7 @@
                 </StackPanel>
 
                 <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
-                    <Button x:Name="btnInserisci" Content="Inserisci" FontSize="18" Width="170" HorizontalAlignment="Center"/>
+                    <Button x:Name="btnInserisci" Content="Inserisci" FontSize="18" Width="170" HorizontalAlignment="Center" Click="btnInserisci_Click"/>
                 </StackPanel>
 
                 <StackPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
@@ -59,7 +59,7 @@
                 </StackPanel>
 
                 <StackPanel Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
-                    <Button x:Name="btnNuovoInserimento" Content="Nuovo Inserimento" FontSize="18" Width="170" HorizontalAlignment="Center"/>
+                    <Button x:Name="btnNuovoInserimento" Content="Nuovo Inserimento" FontSize="18" Width="170" HorizontalAlignment="Center" Click="btnNuovoInserimento_Click"/>
                 </StackPanel>
 
                 <StackPanel Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">

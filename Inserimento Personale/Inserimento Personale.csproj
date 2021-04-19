@@ -70,6 +70,7 @@
     <Compile Include="Aziendalexaml.xaml.cs">
       <DependentUpon>Aziendalexaml.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Costanti.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -83,6 +84,7 @@
     <Compile Include="MostraFile.xaml.cs">
       <DependentUpon>MostraFile.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

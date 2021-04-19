@@ -62,15 +62,15 @@
                 </StackPanel>
 
                 <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Button Name="btnInserisci" Content="Inserisci" FontSize="18" FontWeight="Bold" Width="130" Height="32"/>
+                    <Button Name="btnInserisci" Content="Inserisci" FontSize="18" FontWeight="Bold" Width="130" Height="32" Click="btnInserisci_Click"/>
                 </StackPanel>
 
                 <StackPanel Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Button Name="btnPulisci" Content="Pulisci" FontSize="18" FontWeight="Bold" Width="130" Height="32"/>
+                    <Button Name="btnPulisci" Content="Pulisci" FontSize="18" FontWeight="Bold" Width="130" Height="32" Click="btnPulisci_Click"/>
                 </StackPanel>
 
                 <StackPanel Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Button Name="btnEsci" Content="Esci" FontSize="18" FontWeight="Bold" Width="130" Height="32"/>
+                    <Button Name="btnEsci" Content="Esci" FontSize="18" FontWeight="Bold" Width="130" Height="32" Click="btnEsci_Click"/>
                 </StackPanel>
 
             </Grid>
