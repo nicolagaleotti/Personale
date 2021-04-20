@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,7 +21,7 @@ namespace Inserimento_Personale
     public partial class Aziendalexaml : Window
     {
         Persona p;
-        string[] qualifica = new string[] { "1", "2", "3", "4" };
+        string[] qualifica = new string[] { "Dirigente", "Quadro", "Amministrativo", "Operaio" };
 
         public Aziendalexaml(Persona p)
         {
@@ -46,6 +47,13 @@ namespace Inserimento_Personale
                 p.Qualifica = cmbQualifica.SelectedItem.ToString();
                 p.Area = txtArea.Text;
 
+                using (StreamWriter sw = new StreamWriter(Costanti.FILE, true))
+                {
+                    sw.WriteLine($"{p.CodiceFiscale};{p.Nome};{p.Cognome};{p.Tipologia};{p.Qualifica};{p.Area}");
+                    sw.Flush();
+                    sw.Close();
+                }
+
                 lbRiepilogo.Items.Add(p.Descrizione());
 
                 Pulisci();
@@ -58,13 +66,21 @@ namespace Inserimento_Personale
 
         private void btnNuovoInserimento_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            if (lbRiepilogo.Items.Count == 0)
+                MessageBox.Show("Inserire qualifica e area per creare la persona!", "", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            else
+                this.Close();
         }
 
         private void Pulisci()
         {
             cmbQualifica.SelectedIndex = -1;
             txtArea.Clear();
+        }
+
+        private void btnMostraFile_Click(object sender, RoutedEventArgs e)
+        {
+            new MostraFile().ShowDialog();
         }
     }
 }
