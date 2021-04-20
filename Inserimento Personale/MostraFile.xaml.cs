@@ -23,5 +23,15 @@ namespace Inserimento_Personale
         {
             InitializeComponent();
         }
+
+        private void btnIndietro_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void btnEsci_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

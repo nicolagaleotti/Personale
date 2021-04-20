@@ -31,11 +31,11 @@
                 </StackPanel>
 
                 <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
-                    <Button x:Name="btnIndietro" Content="Indietro" FontSize="18" Width="150" HorizontalAlignment="Center"/>
+                    <Button x:Name="btnIndietro" Content="Indietro" FontSize="18" Width="150" HorizontalAlignment="Center" Click="btnIndietro_Click"/>
                 </StackPanel>
 
                 <StackPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
-                    <Button x:Name="btnEsci" Content="Esci" FontSize="18" Width="150" HorizontalAlignment="Center"/>
+                    <Button x:Name="btnEsci" Content="Esci" FontSize="18" Width="150" HorizontalAlignment="Center" Click="btnEsci_Click"/>
                 </StackPanel>
 
             </Grid>
