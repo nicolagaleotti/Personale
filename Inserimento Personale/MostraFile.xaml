@@ -27,7 +27,13 @@
                 </StackPanel>
 
                 <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
-                    <ListBox x:Name="lbMostra" FontSize="18" Height="245" Width="700" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                    <ListBox x:Name="lbMostra" FontSize="18" Height="245" Width="700" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <UniformGrid Columns="6"/>
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+                    </ListBox>
                 </StackPanel>
 
                 <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">

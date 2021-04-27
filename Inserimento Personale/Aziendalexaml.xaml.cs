@@ -49,7 +49,8 @@ namespace Inserimento_Personale
 
                 using (StreamWriter sw = new StreamWriter(Costanti.FILE, true))
                 {
-                    sw.WriteLine($"{p.CodiceFiscale};{p.Nome};{p.Cognome};{p.Tipologia};{p.Qualifica};{p.Area}");
+                    string line = $"{p.CodiceFiscale};{p.Nome};{p.Cognome};{p.Tipologia};{p.Qualifica};{p.Area}";
+                    sw.WriteLine(line);
                     sw.Flush();
                     sw.Close();
                 }
@@ -57,6 +58,10 @@ namespace Inserimento_Personale
                 lbRiepilogo.Items.Add(p.Descrizione());
 
                 Pulisci();
+
+                cmbQualifica.IsEnabled = false;
+                txtArea.IsEnabled = false;
+                btnInserisci.IsEnabled = false;
             }
             catch (Exception ex)
             {
